@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { PopupComponent } from './popup.component';
 import { PopupService } from './popup.service';
+import { HighlightDirective } from './highlight.directive';
 
 // Include the `PopupService` provider,
 // but exclude `PopupComponent` from compilation,
@@ -13,7 +14,7 @@ import { PopupService } from './popup.service';
 @NgModule({
     imports: [BrowserModule, BrowserAnimationsModule],
     providers: [PopupService],
-    declarations: [AppComponent, PopupComponent],
+    declarations: [AppComponent, PopupComponent, HighlightDirective],
     bootstrap: [AppComponent],
     entryComponents: [PopupComponent],
 })
