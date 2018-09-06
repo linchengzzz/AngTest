@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 import { PopupComponent } from './popup.component';
 import { PopupService } from './popup.service';
 import { HighlightDirective } from './highlight.directive';
+import { UnlessDirective } from './unless.directive';
+import { HeroBirthday1Component } from './hero-birthday1/hero-birthday1.component';
+import { ExponentialPipe } from './exponential.pipe';
 
 // Include the `PopupService` provider,
 // but exclude `PopupComponent` from compilation,
@@ -15,7 +18,7 @@ import { HighlightDirective } from './highlight.directive';
 @NgModule({
     imports: [BrowserModule, BrowserAnimationsModule, FormsModule],
     providers: [PopupService],
-    declarations: [AppComponent, PopupComponent, HighlightDirective],
+    declarations: [AppComponent, PopupComponent, HighlightDirective, UnlessDirective, HeroBirthday1Component, ExponentialPipe],
     bootstrap: [AppComponent],
     entryComponents: [PopupComponent],
 })

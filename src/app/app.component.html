@@ -1,16 +1,3 @@
 <div>
-    <div>
-        Pick your favorite hero 
-        (<label>
-            <input type="checkbox" checked (change)="showSad =! showSad">
-            show add
-        </label>)
-    </div>
-    <select [(ngModel)]="hero">
-        <ng-container *ngFor="let h of heros">
-            <ng-container *ngIf="showSad || h.emotion !== 'sad'">
-                <option [ngValue]="h">{{h.name}} ({{h.emotion}})</option>
-            </ng-container>
-        </ng-container>
-    </select>
+    <app-hero-birthday1></app-hero-birthday1>
 </div>
