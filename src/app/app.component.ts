@@ -5,33 +5,28 @@ class Hero {
     name: string;
     emotion: string;
 }
+
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
-    styleUrls: ['./app.component.css']
+    styleUrls: ['./app.component.css'],
+
 })
 export class AppComponent {
-    public hero: Hero = {
-        id: 5,
-        name: 'zcl',
-        emotion: 'sad',
-    };
-    public heros: Hero[] = [
-        {
-            id: 1,
-            name: 'zzz',
-            emotion: 'sad',
-        },
-        {
-            id: 2,
-            name: 'ccc',
-            emotion: 'happy',
-        },
-        {
-            id: 3,
-            name: 'lll',
-            emotion: 'sad',
-        }
-    ];
-    public condition: boolean = true;
+    public clickMessage: string = '';
+    public model: any = {
+        name: "",
+        id: 10,
+        power : '111',
+        alterEgo: '222',
+    }
+    constructor() {
+    }
+    public onClickMe(): void {
+        this.clickMessage = 'You are click Me';
+        console.log(this.clickMessage);
+    }
+    public onKey(value: string): void {
+        this.clickMessage = value;
+    }
 }

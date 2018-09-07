@@ -1,9 +1,13 @@
 export class Hero {
-    public id: number;
-    public name: string;
+    constructor(
+        public id: number,
+        public name: string,
+        public power: string,
+        public alterEgo?: string
+    ) {}
 }
 
-export const HEROES: Hero[] = [
+export const HEROES: any[] = [
     {
         id: 1,
         name: 'aa'
@@ -16,4 +20,8 @@ export const HEROES: Hero[] = [
         id: 3,
         name: 'cc'
     }
-]
+];
+export class Flyer {
+    public name: string;
+    public canFly: boolean;
+}

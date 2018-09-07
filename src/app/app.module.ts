@@ -10,6 +10,10 @@ import { HighlightDirective } from './highlight.directive';
 import { UnlessDirective } from './unless.directive';
 import { HeroBirthday1Component } from './hero-birthday1/hero-birthday1.component';
 import { ExponentialPipe } from './exponential.pipe';
+import { FlyingHeroesComponent } from './flying-heroes/flying-heroes.component';
+import { FlyingHeroPipe } from "./flying-heroes.pipe";
+import { HeroAsyncMessageComponent } from './hero-async-message/hero-async-message.component';
+import { HeroFormComponent } from './hero-form/hero-form.component';
 
 // Include the `PopupService` provider,
 // but exclude `PopupComponent` from compilation,
@@ -18,7 +22,7 @@ import { ExponentialPipe } from './exponential.pipe';
 @NgModule({
     imports: [BrowserModule, BrowserAnimationsModule, FormsModule],
     providers: [PopupService],
-    declarations: [AppComponent, PopupComponent, HighlightDirective, UnlessDirective, HeroBirthday1Component, ExponentialPipe],
+    declarations: [AppComponent, PopupComponent, HighlightDirective, UnlessDirective, HeroBirthday1Component, ExponentialPipe, FlyingHeroesComponent, FlyingHeroPipe, HeroAsyncMessageComponent, HeroFormComponent],
     bootstrap: [AppComponent],
     entryComponents: [PopupComponent],
 })
