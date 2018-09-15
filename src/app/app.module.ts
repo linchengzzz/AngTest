@@ -14,6 +14,8 @@ import { FlyingHeroesComponent } from './flying-heroes/flying-heroes.component';
 import { FlyingHeroPipe } from "./flying-heroes.pipe";
 import { HeroAsyncMessageComponent } from './hero-async-message/hero-async-message.component';
 import { HeroFormComponent } from './hero-form/hero-form.component';
+import { HeroComponent } from './hero/hero.component';
+import { HeroListComponent } from './hero-list/hero-list.component';
 
 // Include the `PopupService` provider,
 // but exclude `PopupComponent` from compilation,
@@ -22,7 +24,7 @@ import { HeroFormComponent } from './hero-form/hero-form.component';
 @NgModule({
     imports: [BrowserModule, BrowserAnimationsModule, FormsModule],
     providers: [PopupService],
-    declarations: [AppComponent, PopupComponent, HighlightDirective, UnlessDirective, HeroBirthday1Component, ExponentialPipe, FlyingHeroesComponent, FlyingHeroPipe, HeroAsyncMessageComponent, HeroFormComponent],
+    declarations: [AppComponent, PopupComponent, HighlightDirective, UnlessDirective, HeroBirthday1Component, ExponentialPipe, FlyingHeroesComponent, FlyingHeroPipe, HeroAsyncMessageComponent, HeroFormComponent, HeroComponent, HeroListComponent],
     bootstrap: [AppComponent],
     entryComponents: [PopupComponent],
 })
